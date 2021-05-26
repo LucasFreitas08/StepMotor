@@ -1,0 +1,137 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+"66 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\LCD4bits.c
+[v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
+"99
+[v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
+"115
+[v _dispLCD_lincol dispLCD_lincol `(v  1 e 1 0 ]
+"7 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"12 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\stepmotor.c
+[v _stepmotor_init stepmotor_init `(v  1 e 1 0 ]
+"32
+[v _stepmotor stepmotor `(v  1 e 1 0 ]
+"228 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S144 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"369
+[u S153 . 1 `S144 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES153  1 e 1 @8 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S35 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1619
+[u S44 . 1 `S35 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES44  1 e 1 @136 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+[s S22 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RS 1 0 :1:2 
+`uc 1 EN 1 0 :1:3 
+`uc 1 BUS 1 0 :4:4 
+]
+"23 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\LCD4bits.c
+[u S27 . 1 `S22 1 . 1 0 ]
+[v _LCDbits LCDbits `VES27  1 e 1 @8 ]
+"7 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\stepmotor.c
+[v _ppr ppr `i  1 e 2 0 ]
+"8
+[v _passos passos `[4]uc  1 e 4 0 ]
+"9
+[v _indice indice `uc  1 e 1 0 ]
+"15 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\teclado.c
+[v _tabteclado tabteclado `[4][4]uc  1 e 16 0 ]
+"7 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"21
+} 0
+"12 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\stepmotor.c
+[v _stepmotor_init stepmotor_init `(v  1 e 1 0 ]
+{
+[v stepmotor_init@PulsosPorRevolucao PulsosPorRevolucao `i  1 p 2 0 ]
+"29
+} 0
+"32
+[v _stepmotor stepmotor `(v  1 e 1 0 ]
+{
+[v stepmotor@sentido sentido `uc  1 a 1 wreg ]
+"35
+[v stepmotor@i i `i  1 a 2 11 ]
+"36
+[v stepmotor@numpassos numpassos `i  1 a 2 8 ]
+"32
+[v stepmotor@sentido sentido `uc  1 a 1 wreg ]
+[v stepmotor@graus graus `i  1 p 2 4 ]
+[v stepmotor@t t `i  1 p 2 6 ]
+"37
+[v stepmotor@sentido sentido `uc  1 a 1 10 ]
+"49
+} 0
+"3 C:\Users\20185192\MPLABXProjects\DIsp7segELE3TB\MotordePasso.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ui  1 p 2 0 ]
+"10
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 6 ]
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+"41
+} 0

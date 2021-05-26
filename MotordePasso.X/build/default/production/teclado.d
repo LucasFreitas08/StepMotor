@@ -1,1 +1,1 @@
-build/default/production\teclado.i: teclado.c
+build/default/production\teclado.p1: teclado.c
