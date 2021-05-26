@@ -1,0 +1,84 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"7 ./stepmotor.h
+[; ;./stepmotor.h: 7: void stepmotor_init ( int PulsosPorRevolucao );
+[v _stepmotor_init `(v ~T0 @X0 0 ef1`i ]
+"4 ./delay.h
+[; ;./delay.h: 4: void delay ( unsigned int t );
+[v _delay `(v ~T0 @X0 0 ef1`ui ]
+"8 ./stepmotor.h
+[; ;./stepmotor.h: 8: void stepmotor ( char sentido, int graus, int t );
+[v _stepmotor `(v ~T0 @X0 0 ef3`uc`i`i ]
+"5 ./config.h
+[p x FOSC = INTRC_NOCLKOUT ]
+"6
+[p x WDTE = OFF ]
+"7
+[p x PWRTE = OFF ]
+"8
+[p x MCLRE = OFF ]
+"9
+[p x CP = OFF ]
+"10
+[p x CPD = OFF ]
+"11
+[p x BOREN = OFF ]
+"12
+[p x IESO = OFF ]
+"13
+[p x FCMEN = OFF ]
+"14
+[p x LVP = OFF ]
+"17
+[p x BOR4V = BOR40V ]
+"18
+[p x WRT = OFF ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"7 main.c
+[; ;main.c: 7: void main ( void )
+[v _main `(v ~T0 @X0 1 ef ]
+"8
+[; ;main.c: 8: {
+{
+[e :U _main ]
+[f ]
+"9
+[; ;main.c: 9:     stepmotor_init ( 100 );
+[e ( _stepmotor_init (1 -> 100 `i ]
+"10
+[; ;main.c: 10:     delay( 3000 );
+[e ( _delay (1 -> -> 3000 `i `ui ]
+"12
+[; ;main.c: 12:     while ( 1 )
+[e :U 3 ]
+"13
+[; ;main.c: 13:     {
+{
+"14
+[; ;main.c: 14:          stepmotor ( 1, 90, 100 );
+[e ( _stepmotor (3 , , -> -> 1 `i `uc -> 90 `i -> 100 `i ]
+"15
+[; ;main.c: 15:         delay(3000);
+[e ( _delay (1 -> -> 3000 `i `ui ]
+"16
+[; ;main.c: 16:          stepmotor ( 1, 180, 20 );
+[e ( _stepmotor (3 , , -> -> 1 `i `uc -> 180 `i -> 20 `i ]
+"17
+[; ;main.c: 17:         delay(3000);
+[e ( _delay (1 -> -> 3000 `i `ui ]
+"18
+[; ;main.c: 18:          stepmotor ( 1, 720, 20 );
+[e ( _stepmotor (3 , , -> -> 1 `i `uc -> 720 `i -> 20 `i ]
+"19
+[; ;main.c: 19:         delay(3000);
+[e ( _delay (1 -> -> 3000 `i `ui ]
+"20
+[; ;main.c: 20:     }
+}
+[e :U 2 ]
+[e $U 3  ]
+[e :U 4 ]
+"21
+[; ;main.c: 21: }
+[e :UE 1 ]
+}
